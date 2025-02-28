@@ -1,0 +1,20 @@
+def is_natural_number(n):
+    return n > 0 and isinstance(n, int)
+
+# Example usage
+num = 5
+if is_natural_number(num):
+    print(f"{num} is a natural number.")
+else:
+    print(f"{num} is not a natural number.")
+To generate the first n natural numbers:
+You can simply use range() to generate them.
+python
+Copy
+def generate_natural_numbers(n):
+    return list(range(1, n + 1))
+
+# Example usage
+count = 10
+natural_numbers = generate_natural_numbers(count)
+print(natural_numbers)
